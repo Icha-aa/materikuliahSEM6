@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>My Cute CV</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ffd6e7, #ffc0cb);
+      color: #333;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      margin-top: 50px;
+      font-size: 40px;
+      color: #ff4d88;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    .card {
+      background: white;
+      margin: 30px auto;
+      padding: 20px;
+      width: 80%;
+      max-width: 500px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      animation: fadeIn 2s ease;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    footer {
+      margin-top: 40px;
+      font-weight: bold;
+      color: #ff4d88;
+    }
+
+    /* LOVE ANIMATION */
+    .heart {
+      position: fixed;
+      bottom: -10px;
+      font-size: 20px;
+      animation: floatUp 5s linear infinite;
+      color: pink;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-800px);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>💖 Hello, I'm Siti Malikha 💖</h1>
+
+  <div class="card">
+    <h2>🎓 Pendidikan</h2>
+    <p>Informatika Education</p>
+  </div>
+
+  <div class="card">
+    <h2>💻 Skill</h2>
+    <p>HTML, CSS, PHP, MySQL</p>
+  </div>
+
+  <div class="card">
+    <h2>✨ About Me</h2>
+    <p>Saya adalah mahasiswa yang suka belajar teknologi dan membuat aplikasi web yang menarik 💕</p>
+  </div>
+
+  <footer>
+    Dideploy oleh: Siti Malikha Cantikkk - 2388010001
+  </footer>
+
+  <!-- LOVE SCRIPT -->
+  <script>
+    function createHeart() {
+      const heart = document.createElement("div");
+      heart.classList.add("heart");
+      heart.innerHTML = "💖";
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.animationDuration = (3 + Math.random() * 2) + "s";
+      document.body.appendChild(heart);
+
+      setTimeout(() => {
+        heart.remove();
+      }, 5000);
+    }
+
+    setInterval(createHeart, 300);
+  </script>
+
+</body>
+</html>
