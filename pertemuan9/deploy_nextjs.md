@@ -14,8 +14,4 @@
  - Create static File -> npm run build
  - Archive folder standalone -> zip -> klik kanan folder standalone -> send to -> compressed (zipped) folder
 
- ![alt text](image-1.png)
-
- ![alt text](image-2.png)
-
- ![alt text](image-3.png)
+![alt text](image-1.png)
